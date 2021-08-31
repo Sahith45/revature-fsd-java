@@ -1,0 +1,2 @@
+git clone[paste git hub fsd].git
+git status
