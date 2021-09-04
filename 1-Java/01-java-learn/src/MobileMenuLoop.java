@@ -1,11 +1,12 @@
-import java.util.Scanner;
+ import java.util.Scanner;
+
 public class MobileMenuLoop {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		int option = 0;
-		while (option != 4) {
+		while (option <= 4) {
 			System.out.println("menu");
 			System.out.println("===");
 			System.out.println("1. Balance enquiry");
@@ -14,9 +15,9 @@ public class MobileMenuLoop {
 			System.out.println("4. exit");
 			System.out.println("choose an option");
 			int option1 = sc.nextInt();
-			
+
 			switch (option1) {
-			 
+
 			case 1:
 				System.out.println("1. Balance enquiry");
 				break;
@@ -30,12 +31,11 @@ public class MobileMenuLoop {
 				System.out.println("4. Exit");
 				System.exit(0);
 				break;
-				
-				
+
 			}
-			
+
 		}
-		
+
 	}
 
 }

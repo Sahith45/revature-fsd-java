@@ -8,10 +8,20 @@ public class Transaction {
 		this.type = type;
 		this.amount = amount;
 	}
+	 
+	public char getType() {
+		return type;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
 	//instance 
 	public void displayTransaction(double balance) {
 		System.out.printf("   %c %12.2f %8.2f\n", type, amount, balance);
 	}
+	
 	public static void main(String args[]) {
 		Transaction transaction1 = new Transaction('W', 2000);
 		Transaction transaction2 = new Transaction('W', 20000);
