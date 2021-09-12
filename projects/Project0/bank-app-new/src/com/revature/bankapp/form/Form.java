@@ -6,7 +6,7 @@ public abstract class Form {
 	
 	public Form(String name) {
 		this.name = name;
-		success = false;
+		success = true;
 	}
 	
 	private void displayTitle() {
@@ -16,7 +16,7 @@ public abstract class Form {
 	}
 	
 	public void captureDataAndPerformAction() {
-		while (!success) {
+		while (success) {
 			displayTitle();
 			captureData();
 			action();

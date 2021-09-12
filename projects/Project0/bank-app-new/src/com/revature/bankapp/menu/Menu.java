@@ -19,9 +19,9 @@ public abstract class Menu {
 	}
 	
 	public void displayMenu() {
-		System.out.println("\n====");
+		System.out.println("\n_________");
 		System.out.println(name);
-		System.out.println("===\n");
+		System.out.println("_________\n");
 		for (int i = 0; i < menuItems.size(); i++) {
 			System.out.println((i + 1) + "] " + menuItems.get(i));
 		}
