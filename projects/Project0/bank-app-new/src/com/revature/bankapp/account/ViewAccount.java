@@ -1,23 +1,23 @@
 package com.revature.bankapp.account;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewAccount  extends Account{
-	protected static List<String> accList ;
+import com.revature.bankapp.model.DataManager;
 
-
-	public ViewAccount(String name) {
-		super(name);
+public class ViewAccount  {
 	
-		accList = new ArrayList<>();
 		
-	}
+		public static Account accountList() {
+			for (int i=0;i < DataManager.accList.size();i++) {
+				System.out.println((i + 1) + "] " + Account.getAccountNumber());
+			}
+			return null;
+			
+		
 	
-	public static void displayAccounts() {
-		for(String accounts : accList ) {
-			System.out.println("the accounts " + accounts);
+	
+
+		
+			
 		}
 	}
-
-}
