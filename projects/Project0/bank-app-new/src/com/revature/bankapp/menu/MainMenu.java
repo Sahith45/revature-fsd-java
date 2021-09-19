@@ -21,9 +21,9 @@ public class MainMenu extends Menu {
 		Scanner scanner = new Scanner(System.in);
 		switch (selection) {
 		case 1:
-			System.out.println("\n===");
+			System.out.println("\n---------");
 			System.out.println("Register new customer");
-			System.out.println("====\n");
+			System.out.println("---------\n");
 			
 			System.out.print("First Name: ");
 			String firstName = scanner.nextLine();
@@ -37,7 +37,10 @@ public class MainMenu extends Menu {
 			System.out.print("Password: ");
 			String password = scanner.nextLine();
 			
-			DataManager.addCustomer(new Customer(firstName, lastName, email, password));
+			System.out.print("Phone Number: ");
+			String phoneNumber = scanner.nextLine();
+			
+			DataManager.addCustomer(new Customer(firstName, lastName, email, password,phoneNumber));
 			System.out.println("Customer added successfully.");
 			displayMenuAndCaptureSelection();
 			break;

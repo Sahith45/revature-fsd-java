@@ -31,8 +31,10 @@ public class LoginForm extends Form {
 			System.out.println("Invalid email / password");
 		} else if (customer.getPassword().equals(password)) {
 			success = false;
-			System.out.println("Login Successful.");
+			System.out.println("Login Successful.\n");
+			System.out.println("===-----===");
 			System.out.println("Welcome " + customer.getFirstName());
+			System.out.println("===-----===");
 			CustomerMainMenu menu = new CustomerMainMenu("Customer Main Menu");
 			menu.displayMenuAndCaptureSelection();
 			

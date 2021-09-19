@@ -14,6 +14,8 @@ public class CustomerMainMenu extends Menu {
 		super(name);
 		addMenuItem("View Accounts");
 		addMenuItem("Create Account");
+		addMenuItem("Return");
+		addMenuItem("Exit");
 	}
 
 	@Override
@@ -21,9 +23,9 @@ public class CustomerMainMenu extends Menu {
 		Scanner scanner = new Scanner(System.in);
 		switch(selection) {
 		case 1:
-			ViewAccount account = new ViewAccount();
+			ViewAccount.accountList();
+			displayMenuAndCaptureSelection();
 			
-		    account.accountList();
 			break;
 		
 		
@@ -46,9 +48,32 @@ public class CustomerMainMenu extends Menu {
 			displayMenuAndCaptureSelection();
 			
 			break;
+			
+			
+		case 3:
+			System.out.println("====\n");
+			System.out.println("Logged out");
+			System.out.println("====\n");
+			MainMenu menu = new MainMenu("Returned to main menu");
+			menu.displayMenuAndCaptureSelection();
+			break;
+			 
+			
+			
+		case 4:
+			System.out.println("Thank you Visit again");
+			break;
+			
+			
+			
+		
+			
+			
+			
 		
 		}
 		
 	}
+
 
 }

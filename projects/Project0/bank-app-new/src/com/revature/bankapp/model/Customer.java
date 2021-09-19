@@ -1,16 +1,19 @@
 package com.revature.bankapp.model;
 
+import com.revature.bankapp.account.Account;
+
 public class Customer {
 	private long id;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String password;
+	protected String phoneNumber;
 	//private List<Account> accountList;
 	
 	private static long counter = 0;
 	
-	public Customer(String firstName, String lastName, String email, String password) {
+	public Customer(String firstName, String lastName, String email, String password, String phoneNumber) {
 		super();
 		counter++;
 		this.id = counter;
@@ -18,6 +21,7 @@ public class Customer {
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public long getId() {
@@ -40,5 +44,10 @@ public class Customer {
 		return password;
 	}
 
+	public String phoneNumber() {
+		return phoneNumber;
+	}
+	
+	
 
 }
