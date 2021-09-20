@@ -1,7 +1,17 @@
 package com.revature.bankapp.dao;
 
-public interface EmployeeDao {
+import java.sql.SQLException;
+import java.util.List;
+
+import com.revature.bankapp.account.Account;
+import com.revature.bankapp.account.Transaction;
+
+public interface EmployeeDao<Customer> {
 	
+List<Customer> viewCustomer() throws SQLException;
 	
+	List<Account> viewAccount() throws SQLException;
+	
+	List<Transaction> viewTransaction() throws SQLException;
 
 }

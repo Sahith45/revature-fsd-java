@@ -3,24 +3,29 @@ package com.revature.bankapp.menu;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import com.revature.bankapp.account.ViewAccount;
+import com.revature.bankapp.account.ViewTransaction;
 import com.revature.bankapp.dao.impl.AccountDaoImpl;
+import com.revature.bankapp.dao.impl.TransactionDaoImpl;
 
 public class TransactionMenu extends Menu {
-	 public String accNumber; 
-	//public static String accNumber;
-	//public static String transferAccNum;
+	 public  static String accNumber; 
+	 public static String  transferAccNum;
+	
+	
 	Scanner sc = new Scanner(System.in);
 	CustomerMainMenu cm = new CustomerMainMenu("Customer Menu");
+	
 	
 	public TransactionMenu(String name) {
 		super(name);
 		addMenuItem("Withdraw");
 		addMenuItem("Deposit");
-		//addMenuItem("View Transactions");
-		//addMenuItem("View Balance");
-		//addMenuItem("Transfer to account");
-		//addMenuItem("Return to Customer Menu");
-		//addMenuItem("LogOut");
+		addMenuItem("View Transactions");
+		addMenuItem("View Balance");
+		addMenuItem("Transfer to account");
+		addMenuItem("Return to Customer Menu");
+		addMenuItem("LogOut");
 	}
 	
 	public String getAccount() {
@@ -35,13 +40,16 @@ public class TransactionMenu extends Menu {
 	@Override
 	void handleAction() {
 		AccountDaoImpl accdao = new AccountDaoImpl();
+		TransactionDaoImpl trdao = new TransactionDaoImpl();
+		
 		switch (selection) {
 
 		case 1:
 			try {
 				System.out.println("Enter amount to withdraw: ");
 				double amount = sc.nextDouble();
-				accdao.currentAccount().withdraw(amount);
+			accdao.currentAccount().withdraw(amount);
+		
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -60,31 +68,32 @@ public class TransactionMenu extends Menu {
 			cm.displayMenu();
 			break;
 			
-		/*case 3:
+		case 3:	
 			try {
 				accdao.currentAccount();
 			} catch (SQLException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			ViewAccounts.transactionsList();
-			cm.displayMenuLoop();
+			ViewTransaction.transactionList();
+			cm.displayMenu();
 			break;
 			
-		case 4:
+			case 4:
 			try {
-				double balance = accdao.currentAccount().getInitialAmount();
+				double balance = accdao.currentAccount().getBalance();
 				System.out.println("Balance: " + balance);
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			cm.displayMenuLoop();
+			cm.displayMenu();
 			break;
 		
-		case 5:
+			case 5:
 			System.out.println("Enter Account Number of receiver: ");
 			transferAccNum = sc.nextLine();
 			System.out.println("Enter amount to transfer: ");
-			double amount = sc.nextDouble();
+			long amount = sc.nextLong();
 			try {
 				accdao.currentAccount().withdraw(amount);
 				System.out.println("Initiated");
@@ -98,15 +107,17 @@ public class TransactionMenu extends Menu {
 				e.printStackTrace();
 				System.out.println("deposit failed");
 			}
-			cm.displayMenuLoop();
+			cm.displayMenu();
 			break;
 			
-		case 6:
-			cm.displayMenuLoop();
+			case 6:
+			cm.displayMenu();
+			break;
 			
 		case 7:
-			MainMenu mm = new MainMenu("Main Menu");
-			mm.displayMenuLoop();*/
+			
+		    System.out.println("Logged Out");
+		    break;
 }
 		
 	}

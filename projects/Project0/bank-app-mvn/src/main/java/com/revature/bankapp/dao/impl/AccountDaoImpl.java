@@ -73,6 +73,44 @@ public class AccountDaoImpl implements AccountDao {
 		}
 		return account;
 	}
+	public static void updateTransfer(Account account) throws SQLException {
+		try (Connection connection = Util.getConnection()) {
+			String sql = "update account set balance = ? where id = ?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setDouble(1, account.getBalance());
+			statement.setInt(2, transferAccountId);
+			statement.executeUpdate();
+		}
+	}
+	public static void insertTransfer(Transaction transaction) throws SQLException {
+		try (Connection connection = Util.getConnection()) {
+			String sql = "insert into transaction (type, amount, accountId) values (?, ?, ?)";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(1, String.valueOf(transaction.getType()));
+			statement.setDouble(2, transaction.getAmount());
+			statement.setInt(3, transferAccountId);
+			statement.executeUpdate();
+		}
+	}
+	public Account transferAccount() throws SQLException {
+		Account account = null;
+		try (Connection connection = Util.getConnection()) {
+			String sql = "select * from account where accountnumber = ?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(1, TransactionMenu.transferAccNum);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				transferAccountId = resultSet.getInt("id");
+				String accNumber = resultSet.getString("accountnumber");
+				Double initialAmount = resultSet.getDouble("balance");
+
+				account = new Account(accNumber, initialAmount);
+			}
+		}
+		return account;
+	}
+
+
 	
 	
 	

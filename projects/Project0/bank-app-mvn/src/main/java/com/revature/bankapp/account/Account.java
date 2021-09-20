@@ -2,6 +2,7 @@ package com.revature.bankapp.account;
 
 import java.sql.SQLException;
 
+import com.revature.bankapp.dao.impl.AccountDaoImpl;
 import com.revature.bankapp.dao.impl.TransactionDaoImpl;
 
 public class Account {
@@ -25,7 +26,8 @@ public class Account {
 		if (balance < amount) {
 			System.out.println("Transaction Canont be Implied");}
 		else if (balance >= amount) {
-			balance-=amount;
+			balance -= amount;
+			System.out.println(" WithDraw successfull");
 			try {
 				tdao.insert(new Transaction('w',amount));
 				tdao.update(this);
@@ -42,6 +44,8 @@ public class Account {
 			System.out.println("Transaction Canont be Implied");}
 		else if (balance >= amount) {
 			balance+=amount;
+			System.out.println(" Deposite successfull");
+			
 			try {
 				tdao.insert(new Transaction('d',amount));
 				tdao.update(this);
@@ -52,6 +56,22 @@ public class Account {
 			}
 			return balance;
 	}
+	public void transfer(double amount) {
+		balance += amount;
+		try {
+			AccountDaoImpl.insertTransfer(new Transaction('C', amount));
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			AccountDaoImpl.updateTransfer(this);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	
 	
 	

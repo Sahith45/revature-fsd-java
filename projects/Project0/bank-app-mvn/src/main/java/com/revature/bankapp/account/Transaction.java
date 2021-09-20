@@ -14,6 +14,7 @@ public class Transaction {
 		this.type = type;
 		this.amount = amount;
 	}
+
 	
 	public Transaction() {
 		

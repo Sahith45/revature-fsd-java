@@ -4,7 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.revature.bankapp.account.Account;
 import com.revature.bankapp.dao.CustomerDao;
 import com.revature.bankapp.dao.EmployeeDao;
 import com.revature.bankapp.dao.Util;
@@ -29,6 +32,53 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			}
 		}
 		return employee;
+	}
+
+	@Override
+	public List viewCustomer() throws SQLException {
+		List<Customer> customerList = new ArrayList<>();
+		try (Connection connection = Util.getConnection()) {
+			String sql = "select * from customer";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			ResultSet resultSet = statement.executeQuery();
+			while(resultSet.next()) {
+				Customer customerTemp = new Customer();
+				customerTemp.setCustomerId(resultSet.getInt("id"));
+				customerTemp.setName(resultSet.getString("name"));
+				customerTemp.setUserId(resultSet.getString("user_id"));
+				customerList.add(customerTemp);
+			}
+		return customerList;
+		}
+		return null;
+	}
+
+	@Override
+	public List viewAccount() throws SQLException {
+		List<Account> accountList = new ArrayList<>();
+		try (Connection connection = Util.getConnection()) {
+			String sql = "select c.id, c.name, account_number, initial_amount from account\r\n" + 
+					"inner join customer c on customer_id = c.id";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				Account accountTemp = new Account();
+				accountTemp.setCustomerId(resultSet.getInt("id"));
+				accountTemp.setName(resultSet.getString("name"));
+				accountTemp.setAccountNumber(resultSet.getString("account_number"));
+				accountTemp.setInitialAmount(resultSet.getDouble("initial_amount"));
+				accountList.add(accountTemp);
+
+			}
+		}
+		return accountList;
+		return null;
+	}
+
+	@Override
+	public List viewTransaction() throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

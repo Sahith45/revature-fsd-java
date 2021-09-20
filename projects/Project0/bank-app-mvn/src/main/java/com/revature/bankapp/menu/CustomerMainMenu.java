@@ -57,16 +57,13 @@ public class CustomerMainMenu extends Menu {
 		case 3 :
 			System.out.println("");
 			TransactionMenu tm = new TransactionMenu("Transaction menu");
+			tm.getAccount();
 		    tm.displayMenuAndCaptureSelection();	
+		    break;
 	
-		
-			
 	
 
 		case 4:
-			System.out.println("====\n");
-			System.out.println("Logged out");
-			System.out.println("====\n");
 			CustomerMenu menu = new CustomerMenu("Returned to main menu");
 			menu.displayMenuAndCaptureSelection();
 			break;

@@ -23,6 +23,9 @@ public class Customer {
 		this.password = password;
 		this.phoneNumber = phoneNumber;
 	}
+	public Customer() {
+		
+	}
 
 	public long getId() {
 		return id;
