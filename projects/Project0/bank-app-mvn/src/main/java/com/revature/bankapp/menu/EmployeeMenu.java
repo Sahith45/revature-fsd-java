@@ -4,13 +4,18 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
+import com.revature.bankapp.account.Account;
+import com.revature.bankapp.account.Transaction;
 import com.revature.bankapp.account.ViewAccount;
 import com.revature.bankapp.account.ViewCustomer;
+import com.revature.bankapp.account.ViewTransaction;
+import com.revature.bankapp.dao.impl.AccountDaoImpl;
 import com.revature.bankapp.dao.impl.CustomerDaoImpl;
 import com.revature.bankapp.dao.impl.EmployeeDaoImpl;
 import com.revature.bankapp.model.Customer;
 
 public class EmployeeMenu extends Menu {
+	Scanner scanner = new Scanner(System.in);
 
 	public EmployeeMenu(String name) {
 		super(name);
@@ -18,7 +23,7 @@ public class EmployeeMenu extends Menu {
 		addMenuItem("View Customers");
 		addMenuItem("View Accounts");
 		addMenuItem("View Transactions");
-		addMenuItem("Pending Accounts");
+		//addMenuItem("Pending Accounts");
 		addMenuItem("Logout");
 
 	}
@@ -26,11 +31,10 @@ public class EmployeeMenu extends Menu {
 	@Override
 	void handleAction() {
 
-		switch (selection) {
-		case 1:
-			Scanner scanner = new Scanner(System.in);
 			CustomerDaoImpl customer = new CustomerDaoImpl();
+			
 			switch (selection) {
+			
 			case 1:
 				System.out.println("\n---------");
 				System.out.println("Register new customer");
@@ -59,25 +63,54 @@ public class EmployeeMenu extends Menu {
 				}
 				System.out.println("Customer added successfully.");
 				displayMenuAndCaptureSelection();
+				
 				break;
 				
 			case 2:
-				System.out.println("Customer List::");
+				//System.out.println("Customer List::");
 				ViewCustomer.customerList();
+				displayMenuAndCaptureSelection();
 				break;
 				
 				
 				
 			case 3:
-				System.out.println("Customer Accounts::");
-				ViewAccount.accountList();
+				try {
+					List<Account> list = EmployeeDaoImpl.eViewAccount();
+					for(int i =0; i <list.size(); i++) {
+						System.out.println((i+1) + ") " + list.get(i));
+					}
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				displayMenuAndCaptureSelection();
-
 				break;
+			case 4:
+				try {
+					List<Transaction> list = EmployeeDaoImpl.eViewTransaction();
+					for(int i =0; i <list.size(); i++) {
+						System.out.println((i+1) + ") " + list.get(i));
+					}
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				displayMenuAndCaptureSelection();
+				break;
+				
+				
+			/*case 5:
+				displayMenuAndCaptureSelection();
+				break;*/
+			case 5:
+				 System.out.println("Logged Out");
+				    break;
+			}
 
 				
 			}
 
 		}
-	}
-}
+
+

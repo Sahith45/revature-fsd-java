@@ -53,7 +53,7 @@ public class TransactionMenu extends Menu {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			cm.displayMenu();
+			displayMenuAndCaptureSelection();
 			break;
 
 		case 2:
@@ -65,7 +65,7 @@ public class TransactionMenu extends Menu {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			cm.displayMenu();
+			displayMenuAndCaptureSelection();
 			break;
 			
 		case 3:	
@@ -76,7 +76,7 @@ public class TransactionMenu extends Menu {
 				e.printStackTrace();
 			}
 			ViewTransaction.transactionList();
-			cm.displayMenu();
+			displayMenuAndCaptureSelection();
 			break;
 			
 			case 4:
@@ -86,7 +86,7 @@ public class TransactionMenu extends Menu {
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			cm.displayMenu();
+			displayMenuAndCaptureSelection();
 			break;
 		
 			case 5:
@@ -107,11 +107,11 @@ public class TransactionMenu extends Menu {
 				e.printStackTrace();
 				System.out.println("deposit failed");
 			}
-			cm.displayMenu();
+			displayMenuAndCaptureSelection();
 			break;
 			
 			case 6:
-			cm.displayMenu();
+				displayMenuAndCaptureSelection();
 			break;
 			
 		case 7:

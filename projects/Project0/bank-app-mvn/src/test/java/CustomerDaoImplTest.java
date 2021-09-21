@@ -23,5 +23,18 @@ class CustomerDaoImplTest {
 					
 
 	}
+	@Test
+	void testGet_Email() {
+		Customer customer = new Customer("Maria", "John", "maria@gmail.com", "pass","PhoneNumber");
+		CustomerDaoImpl dao = new CustomerDaoImpl();
+		try {
+			
+			 dao.getCustomerEmail("maria@gmail.com");
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }

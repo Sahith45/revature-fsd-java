@@ -8,15 +8,15 @@ import com.revature.bankapp.model.Customer;
 
 public class ViewCustomer {
 
-	public static Account customerList() {
+	public static Customer customerList() {
 		EmployeeDaoImpl emp = new EmployeeDaoImpl();
 		System.out.println("Customer List");
 		int i = 1;
 		try {
 			for (Customer customer : emp.viewCustomer()) {
 
-				System.out.println((i) + "} " + "FirstName =  " + customer.getFirstName() + "  LastName = "
-						+ customer.getLastName() +  "Email =  " + customer.getEmail() + "Password=  " + customer.getPassword() + "PhoneNumber =  " + customer.getPhoneNumber());
+				System.out.println((i) + "} " + " FirstName =  " + customer.getFirstName() + "  LastName = "
+						+ customer.getLastName() +  " Email =  " + customer.getEmail() + " PhoneNumber =  " + customer.getPhoneNumber());
 				i += 1;
 
 

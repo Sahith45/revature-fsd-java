@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.revature.bankapp.account.Account;
+import com.revature.bankapp.account.Transaction;
 import com.revature.bankapp.dao.CustomerDao;
 import com.revature.bankapp.dao.EmployeeDao;
 import com.revature.bankapp.dao.Util;
@@ -17,8 +18,8 @@ import com.revature.bankapp.model.Employee;
 public class EmployeeDaoImpl implements EmployeeDao {
 	public Employee getEmployeeUserName(String userName) throws SQLException {
 		Employee employee = null;
-		
-		try (Connection connection = Util.getConnection()){
+
+		try (Connection connection = Util.getConnection()) {
 			String sql = "select * from admin where userName = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, userName);
@@ -27,7 +28,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				String name = resultSet.getString("name");
 				String username = resultSet.getString("userName");
 				String password = resultSet.getString("password");
-				
+
 				employee = new Employee(name, username, password);
 			}
 		}
@@ -37,53 +38,77 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	@Override
 	public List<Customer> viewCustomer() throws SQLException {
 		List<Customer> customerList = new ArrayList<>();
+
 		try (Connection connection = Util.getConnection()) {
 			String sql = "select * from customer";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			ResultSet resultSet = statement.executeQuery();
-			while(resultSet.next()) {
+			while (resultSet.next()) {
 				Customer customerTemp = new Customer();
-				customerTemp.setFirstName(resultSet.getString("firstName"));
-				customerTemp.setLastName(resultSet.getString("lastname"));
-				customerTemp.setEmail(resultSet.getString("email"));
-				customerTemp.setPassword(resultSet.getString("password"));
-				customerTemp.setPhoneNumber(resultSet.getString("phoneNumber"));
-				
+				customerTemp.setFirstName(resultSet.getString("First_Name"));
+				customerTemp.setLastName(resultSet.getString("Last_Name"));
+				customerTemp.setEmail(resultSet.getString("Email"));
+				customerTemp.setPhoneNumber(resultSet.getString("PhoneNumber"));
+
 				customerList.add(customerTemp);
+
 			}
-		return customerList;
+			return customerList;
 		}
-		
+
 	}
 
-	/*	@Override
-	public List viewAccount() throws SQLException {
+	public static List eViewAccount() throws SQLException {
 		List<Account> accountList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
-			String sql = "select c.id, c.name, account_number, initial_amount from account\r\n" + 
-					"inner join customer c on customer_id = c.id";
+			String sql = "select c.id, c.First_Name,c.Last_name,c.Email,c.Phonenumber,a.customerid, accountnumber, balance from account a\r\n"
+					+ " inner join customer c on customerid = c.id;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			ResultSet resultSet = statement.executeQuery();
 			while (resultSet.next()) {
 				Account accountTemp = new Account();
-				accountTemp.setCustomerId(resultSet.getInt("id"));
-				accountTemp.setName(resultSet.getString("name"));
-				accountTemp.setAccountNumber(resultSet.getString("account_number"));
-				accountTemp.setInitialAmount(resultSet.getDouble("initial_amount"));
+				accountTemp.setCustomerId(resultSet.getInt("customerid"));
+				accountTemp.setId(resultSet.getInt("id"));
+				accountTemp.setFirst_Name(resultSet.getString("First_Name"));
+				accountTemp.setLast_Name(resultSet.getString("Last_Name"));
+				accountTemp.setEmail(resultSet.getString("Email"));
+				accountTemp.setAccountNumber(resultSet.getString("accountnumber"));
+				accountTemp.setBalance(resultSet.getDouble("balance"));
+
 				accountList.add(accountTemp);
 
 			}
 		}
 		return accountList;
-		return null;
+
 	}
 
-	@Override
-	public List viewTransaction() throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}*/
+	public static List<Transaction> eViewTransaction() throws SQLException {
+		List<Transaction> transactionList = new ArrayList<>();
+		try (Connection connection = Util.getConnection()) {
+			String sql ="select c.id, c.First_Name, c.Last_Name, c.Email,c.PhoneNumber,a.accountnumber, a.balance, t.type , t.amount ,t.accountId \r\n" + 
+					"from transaction t\r\n" + 
+					"inner join account a \r\n" + 
+					"on accountId = a.id \r\n" + 
+					"inner join customer c\r\n" + 
+					" on customerid = c.id";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			ResultSet resultSet = statement.executeQuery();	
+			while (resultSet.next()) {
+				Transaction transactionTemp = new Transaction();
+				transactionTemp.setAccountId(resultSet.getInt("accountId"));
+				transactionTemp.setCustomerId(resultSet.getInt("id"));
+				transactionTemp.setFirstName(resultSet.getString("First_Name"));
+				transactionTemp.setLastName(resultSet.getString("Last_Name"));
+				transactionTemp.setAccountNumber(resultSet.getString("accountnumber"));
+				transactionTemp.setBalance(resultSet.getDouble("balance"));
+				transactionTemp.setType(resultSet.getString("type").charAt(0));
+				transactionTemp.setAmount(resultSet.getDouble("amount"));
+				transactionList.add(transactionTemp);
 
-	
+			}
+		}
+		return transactionList;
 
+	}
 }

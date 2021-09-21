@@ -7,9 +7,14 @@ import com.revature.bankapp.dao.impl.TransactionDaoImpl;
 
 public class Account {
 	
+	
 	protected   String accountNumber;
 	protected  double balance;
 	protected int customerId;
+	protected   String First_Name;
+	protected   String Last_Name;
+	protected   String Email;
+	protected   int id;
 	public Account() {
 		
 	}
@@ -22,6 +27,33 @@ public class Account {
 		this.balance = balance;
 	}
 	
+	
+	
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+	public String getFirst_Name() {
+		return First_Name;
+	}
+
+
+	public void setFirst_Name(String first_Name) {
+		First_Name = first_Name;
+	}
+
+
+	
+
+
 	public double withdraw(double amount) {
 		if (balance < amount) {
 			System.out.println("Transaction Canont be Implied");}
@@ -105,10 +137,47 @@ public class Account {
 	}
 
 
+
+	public String getLast_Name() {
+		return Last_Name;
+	}
+
+
+
+	public void setLast_Name(String last_Name) {
+		Last_Name = last_Name;
+	}
+
+
+
+	public String getEmail() {
+		return Email;
+	}
+
+
+
+	public void setEmail(String email) {
+		Email = email;
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", balance=" + balance + ", customerId=" + customerId + "]";
+		return "Account [accountNumber=" + accountNumber + ", balance=" + balance + ", customerId=" + customerId
+				+ ", First_Name=" + First_Name + ", Last_Name=" + Last_Name + ", Email=" + Email + ", id=" + id + "]";
 	}
+
+
+
+
+
+	
+
+
+	
+
+	
 
 
 	

@@ -3,9 +3,10 @@ package com.revature.bankapp.account;
 public class Transaction {
 
 	private int customerId;
-	private String name;
+	private String firstName;
+	private String lastName;
 	private String accountNumber;	
-	private double initialAmount;
+	private double balance;
 	private int accountId;
 	private char type;
 	private double amount;
@@ -25,18 +26,31 @@ public class Transaction {
 		return customerId;
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 	public String getAccountNumber() {
 		return accountNumber;
 	}
@@ -45,12 +59,12 @@ public class Transaction {
 		this.accountNumber = accountNumber;
 	}
 
-	public double getInitialAmount() {
-		return initialAmount;
+	public double getBalance() {
+		return balance;
 	}
 
-	public void setInitialAmount(double initialAmount) {
-		this.initialAmount = initialAmount;
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 
 	public int getAccountId() {
@@ -83,8 +97,8 @@ public class Transaction {
 
 	@Override
 	public String toString() {
-		return "CustomerId: " + customerId + "  Name: " + name + "  Account Number: " + accountNumber
-				+ "  Balance: " + initialAmount + "  Account Id: " + accountId + "  Type: " + type + "  Amount: "
+		return "CustomerId: " + customerId + "  firstName: " + firstName + "  LastName: " +lastName + "  Account Number: " + accountNumber
+				+ "  Balance: " + balance + "  Account Id: " + accountId + "  Type: " + type + "  Amount: "
 				+ amount;
 	}
 
