@@ -8,10 +8,8 @@ import com.revature.bankapp.account.Transaction;
 
 public interface EmployeeDao<Customer> {
 	
-List<Customer> viewCustomer() throws SQLException;
+ List<Customer> viewCustomer() throws SQLException;
 	
-	List<Account> viewAccount() throws SQLException;
 	
-	List<Transaction> viewTransaction() throws SQLException;
 
 }

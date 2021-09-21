@@ -35,7 +35,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	}
 
 	@Override
-	public List viewCustomer() throws SQLException {
+	public List<Customer> viewCustomer() throws SQLException {
 		List<Customer> customerList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
 			String sql = "select * from customer";
@@ -43,17 +43,20 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			ResultSet resultSet = statement.executeQuery();
 			while(resultSet.next()) {
 				Customer customerTemp = new Customer();
-				customerTemp.setCustomerId(resultSet.getInt("id"));
-				customerTemp.setName(resultSet.getString("name"));
-				customerTemp.setUserId(resultSet.getString("user_id"));
+				customerTemp.setFirstName(resultSet.getString("firstName"));
+				customerTemp.setLastName(resultSet.getString("lastname"));
+				customerTemp.setEmail(resultSet.getString("email"));
+				customerTemp.setPassword(resultSet.getString("password"));
+				customerTemp.setPhoneNumber(resultSet.getString("phoneNumber"));
+				
 				customerList.add(customerTemp);
 			}
 		return customerList;
 		}
-		return null;
+		
 	}
 
-	@Override
+	/*	@Override
 	public List viewAccount() throws SQLException {
 		List<Account> accountList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
@@ -79,7 +82,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	public List viewTransaction() throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}*/
 
 	
 

@@ -23,7 +23,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			statement.setString(2, customer.getLastName());
 			statement.setString(3, customer.getEmail());
 			statement.setString(4, customer.getPassword());
-			statement.setString(5, customer.getphoneNumber());
+			statement.setString(5, customer.getPhoneNumber());
 			statement.executeUpdate();
 			
 			ResultSet rs = statement.getGeneratedKeys();

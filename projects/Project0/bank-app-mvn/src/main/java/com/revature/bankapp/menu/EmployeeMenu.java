@@ -1,10 +1,13 @@
 package com.revature.bankapp.menu;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Scanner;
 
 import com.revature.bankapp.account.ViewAccount;
+import com.revature.bankapp.account.ViewCustomer;
 import com.revature.bankapp.dao.impl.CustomerDaoImpl;
+import com.revature.bankapp.dao.impl.EmployeeDaoImpl;
 import com.revature.bankapp.model.Customer;
 
 public class EmployeeMenu extends Menu {
@@ -59,6 +62,10 @@ public class EmployeeMenu extends Menu {
 				break;
 				
 			case 2:
+				System.out.println("Customer List::");
+				ViewCustomer.customerList();
+				break;
+				
 				
 				
 			case 3:
