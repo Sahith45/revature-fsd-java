@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>     
+        <body>
+            <script>
+             var male = {
+                code: "M",
+                name: "Male"
+            };
+            var female = {
+                 code:"F",
+                 name:"Female"
+
+
+            };
+            var employee = {
+                name:"john",
+                gender:male,
+                salary:1000
+                
+            };
+            var employee1 = {
+                name:"stella",
+                gender:female,
+                salary:3000
+                
+            };
+             
+           // male.code = "f"
+            console.log(male.code);
+            console.log(male.name);
+            console.log(employee.name);
+            console.log(employee.gender.name);
+            console.log(employee.salary);
+            console.log(employee1.name);
+            console.log(employee1.gender.name);
+            console.log(employee1.salary);
+
+
+
+            var employees = [employee , employee1];
+            console.log(employees[0].gender.code);
+            console.log(employees[1].gender.code);
+
+            for(var em of employees){
+                console.log(em);
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+        </body>   
+
+
+
+
+        </body>
+    </head>
+</html>

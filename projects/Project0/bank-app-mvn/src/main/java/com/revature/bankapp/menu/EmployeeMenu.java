@@ -67,7 +67,8 @@ public class EmployeeMenu extends Menu {
 				break;
 				
 			case 2:
-				//System.out.println("Customer List::");
+				
+				System.out.println("Retrieving from Data base.............");
 				ViewCustomer.customerList();
 				displayMenuAndCaptureSelection();
 				break;
@@ -75,6 +76,7 @@ public class EmployeeMenu extends Menu {
 				
 				
 			case 3:
+				System.out.println("Retrieving from Data base.............");
 				try {
 					List<Account> list = EmployeeDaoImpl.eViewAccount();
 					for(int i =0; i <list.size(); i++) {
@@ -87,6 +89,7 @@ public class EmployeeMenu extends Menu {
 				displayMenuAndCaptureSelection();
 				break;
 			case 4:
+				System.out.println("Retrieving from Data base.............");
 				try {
 					List<Transaction> list = EmployeeDaoImpl.eViewTransaction();
 					for(int i =0; i <list.size(); i++) {
@@ -104,6 +107,7 @@ public class EmployeeMenu extends Menu {
 				displayMenuAndCaptureSelection();
 				break;*/
 			case 5:
+				System.out.println("--------------------------");
 				 System.out.println("Logged Out");
 				    break;
 			}

@@ -6,7 +6,8 @@ a {
        font-weight: bold;
         cursor: pointer
 
-}.nav{
+}
+.nav{
     background-color: darkblue;
     padding: 1rem;
      text-decoration: none;

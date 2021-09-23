@@ -46,6 +46,7 @@ public class TransactionMenu extends Menu {
 
 		case 1:
 			try {
+				System.out.println("--------------------------");
 				System.out.println("Enter amount to withdraw: ");
 				double amount = sc.nextDouble();
 			accdao.currentAccount().withdraw(amount);
@@ -57,7 +58,7 @@ public class TransactionMenu extends Menu {
 			break;
 
 		case 2:
-			
+			System.out.println("--------------------------");
 			try {
 				System.out.println("Enter amount to deposit: ");
 				double amount = sc.nextDouble();
@@ -69,6 +70,7 @@ public class TransactionMenu extends Menu {
 			break;
 			
 		case 3:	
+			System.out.println("Retrieving from Data base.............");
 			try {
 				accdao.currentAccount();
 			} catch (SQLException e) {
@@ -80,6 +82,7 @@ public class TransactionMenu extends Menu {
 			break;
 			
 			case 4:
+				System.out.println("Retrieving from Data base.............");
 			try {
 				double balance = accdao.currentAccount().getBalance();
 				System.out.println("Balance: " + balance);
@@ -90,6 +93,7 @@ public class TransactionMenu extends Menu {
 			break;
 		
 			case 5:
+				System.out.println("--------------------------");
 			System.out.println("Enter Account Number of receiver: ");
 			transferAccNum = sc.nextLine();
 			System.out.println("Enter amount to transfer: ");
@@ -111,10 +115,13 @@ public class TransactionMenu extends Menu {
 			break;
 			
 			case 6:
-				displayMenuAndCaptureSelection();
+				System.out.println("--------------------------");
+				CustomerMainMenu m = new CustomerMainMenu("Customer Menu ");
+				m.displayMenuAndCaptureSelection();
 			break;
 			
 		case 7:
+			System.out.println("--------------------------");
 			
 		    System.out.println("Logged Out");
 		    break;
