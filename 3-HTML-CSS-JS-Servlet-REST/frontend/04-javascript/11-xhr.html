@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+            // connectiom is established
+            xhr.open("GET", "https://api.github.com/users/Sahith45/repos");
+            xhr.send();// asynchronous
+            xhr.addEventListener("readystatechange", function() {
+                //0-unsend
+                //1-opened
+                //2-header received
+                //3-loading
+                //4-done
+                if (xhr.readyState == 4) {
+                    var repos = JSON.parse(xhr.responseText);
+                    for (let repo of repos) {
+                        console.log(repo.name);
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

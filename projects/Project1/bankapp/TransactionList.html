@@ -32,20 +32,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="Employee.html">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="Customer.html">Home <span class="sr-only"></span></a>
                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#" >Customer Accounts</a>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Accounts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="CreateAccount.html">Create Accounts</a>
+                        <a class="dropdown-item" href="ViewAccounts.html">View Accounts</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item" href="#"></a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="CustomerTransaction.html" >Customer Transactions List</a>
-                </li>
-                
-
+                  
                
-                <!-- <li class="nav-item ">
+               
+                <li class="nav-item ">
                     <a class="nav-link disabled" href="Signup.html" tabindex="-1" aria-disabled="true">SignUp</a>
-                </li> -->
+                </li>
 
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -67,15 +73,27 @@
 
         </div>
     </nav>
-    <div class="cls">
-        <h1>Old Second Bankcorp...</h1><br><br>
-
-    </div>
-
     <div class="csi">
-        <h3>Welcome Mr/Ms::</h3><br><br>
-  
-    </div>
+       
+        <div class="cls">
+            <h1>Old Second Bankcorp....</h1><br><br>
+            <h2>Transaction Lists Of Customer</h2>
+    
+        </div>
+        <form>
+            <label for="fn">Enter the Account Number:</label>
+            <input type="text" id="fn"  required placeholder="Enter Your Account Number"><br><br>
+            <a href="ViewAccounts.html"><input type="submit" value="View Transaction List"></a>
+
+          
+
+           
+            
+            
+        </form>
+       
+       
+   
 
 
 

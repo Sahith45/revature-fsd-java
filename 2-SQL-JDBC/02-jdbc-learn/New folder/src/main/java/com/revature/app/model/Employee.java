@@ -5,7 +5,7 @@ public class Employee {
 	private String name;
 	private double salary;
 	private char gender;
-	private  Department department;
+	private  int departmentId;
 	public int getId() {
 		return id;
 	}
@@ -30,16 +30,18 @@ public class Employee {
 	public void setGender(char gender) {
 		this.gender = gender;
 	}
-	public Department getDepartment() {
-		return department;
+	
+	
+	public int getDepartmentId() {
+		return departmentId;
 	}
-	public void setDepartment(Department department) {
-		this.department = department;
+	public void setDepartmentId(int departmentId) {
+		this.departmentId = departmentId;
 	}
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", gender=" + gender + ", department="
-				+ department + "]";
+				+ departmentId + "]";
 	}
 	
 	

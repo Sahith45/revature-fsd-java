@@ -29,7 +29,7 @@ try {
 	            	employee.setId(resultSet.getInt("id"));
 	            	employee.setSalary(resultSet.getDouble("salary"));
 	            	employee.setGender(resultSet.getString("gender").charAt(0));
-	            	employee.setDepartment_id(resultSet.getInt("department_id"));
+	            	employee.setDepartmentId(resultSet.getInt("department_id"));
 	            	employeeList.add(employee);
 	            	
 	            	

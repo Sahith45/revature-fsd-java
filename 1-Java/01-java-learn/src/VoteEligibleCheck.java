@@ -5,7 +5,7 @@ public class VoteEligibleCheck {
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter your age");
 		int a= s.nextInt();
-		if(a > = 18) {
+		if(a >= 18) {
 			System.out.println("your are eligible to vote");
 			
 		}

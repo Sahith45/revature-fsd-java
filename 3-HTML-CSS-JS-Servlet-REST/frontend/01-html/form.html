@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>FORM TAG</title>
-    </head>
-    <body>
-        <h1>Form Demo</h1>
-        <form method="post" action="https://www.w3schools.com/action_page.php">
-            <label for="name">Name:</label>
-            <input type="text" id = "name" placeholder="Enter Name" name="name"><br>
-            <label for="ps">Password:</label>
-            <input type="password" id = "ps" placeholder="password min 8 char" required value = "111" name="password"><br>
-            <label for="email">Email: </label>
-            <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.9.-]+\.[a-z]{2,}$" title="Enter valid Email." value="sah@gmail.com" name="email">
 
-            <select>
-                <option> Red </option>
-                <option> Orange </option>
-                <option selected> Blue </option>
-            </select><br><br>
-            <label> Gender </label><br>
-            <input type="radio" name = "Gender" value="m" id="male" checked >
-            <label>Male</label>
-            <input type="radio" name = "Gender"value="f" id="female">
-            <label>Female</label><br><br>
+<head>
+    <title>FORM TAG</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+    <form method="post" action="https://www.w3schools.com/action_page.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Name" name="name"><br>
+        <label for="ps">Password:</label>
+        <input type="password" id="ps" placeholder="password min 8 char" required value="111" name="password"><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.9.-]+\.[a-z]{2,}$" title="Enter valid Email."
+            value="sah@gmail.com" name="email">
+
+        <select>
+            <option> Red </option>
+            <option> Orange </option>
+            <option selected> Blue </option>
+        </select><br><br>
+        <label> Gender </label><br>
+        <input type="radio" name="Gender" value="m" id="male" checked>
+        <label>Male</label>
+        <input type="radio" name="Gender" value="f" id="female">
+        <label>Female</label><br><br>
 
 
-            <select multiple name="Languages -m">
-                <option>English</option>
-                <option>Arabic</option>
-                <option>Spanish</option>
-                <option>French</option>
-            </select><br><br>
-            <input type="checkbox" id="english" name="Languages" value="English"><label for="english">English</label>
-            <input type="checkbox" id="arabic" name="Languages" value="Arabic" checked><label for="arabic">Arabic</label>
-            <input type="checkbox" id="spanish" name="Languages"value="Spanish"><label for="spanish">Spanish</label>
-            <input type="checkbox" id="french" name="Languages"value="Frenchs"><label for="french">French</label>
-            <textarea name= "text area">Line 1
+        <select multiple name="Languages -m">
+            <option>English</option>
+            <option>Arabic</option>
+            <option>Spanish</option>
+            <option>French</option>
+        </select><br><br>
+        <input type="checkbox" id="english" name="Languages" value="English"><label for="english">English</label>
+        <input type="checkbox" id="arabic" name="Languages" value="Arabic" checked><label for="arabic">Arabic</label>
+        <input type="checkbox" id="spanish" name="Languages" value="Spanish"><label for="spanish">Spanish</label>
+        <input type="checkbox" id="french" name="Languages" value="Frenchs"><label for="french">French</label>
+        <textarea name="text area">Line 1
 Line 2
 Line 3
             </textarea><br><br>
-            <input type="submit" value = "Login">
+        <input type="submit" value="Login">
 
 
 
@@ -51,6 +54,7 @@ Line 3
 
 
 
-        </form>
-    </body>
+    </form>
+</body>
+
 </html>
