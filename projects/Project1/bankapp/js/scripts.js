@@ -1,36 +1,44 @@
 let accounts = [
     {
-        FirstName: D,
-        LastName: Sahith,
-        AccountNumber: 089287647277,
+        FirstName:"D",
+        LastName: "Sahith",
+        AccountNumber: "089287647277",
         balance: 40000
 
 
     },
     {
-        FirstName: D,
-        LastName: Sahith,
-        AccountNumber: 0892876473456,
-        balance: 6000
+      FirstName:"D",
+      LastName: "Sahith",
+      AccountNumber: "54677647277",
+      balance: 60000
 
 
     },
     {
-        FirstName: D,
-        LastName: Sahith,
-        AccountNumber: 0892876473556,
-        balance: 50000
+      FirstName:"D",
+      LastName: "Sahith",
+      AccountNumber: "0892876467887",
+      balance: 70000
+
+    },
+    {
+      FirstName:"D",
+      LastName: "Sahith",
+      AccountNumber: "0892876472455",
+      balance: 450000
 
 
     },
     {
-        FirstName: D,
-        FirstName: Sahith,
-        AccountNumber: 08928764726984,
-        balance: 90000
+      FirstName:"D",
+      LastName: "Arshat coder",
+      AccountNumber: "2842957276472455",
+      balance: 4500000000
 
 
-    },
+    }
+    
 
 
 ];
