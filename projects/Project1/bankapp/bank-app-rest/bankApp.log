@@ -1,0 +1,226 @@
+[http-nio-8080-exec-4] 2021-09-29 19:44:59 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-09-29 19:44:59 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=John, lastName=Smith, email=john.smith@gmail.com, password=pwd123, phoneNumber=7236542882]
+[http-nio-8080-exec-4] 2021-09-29 19:44:59 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-09-29 19:45:01 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-09-29 19:49:18 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-09-29 19:49:18 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=John, lastName=Smith, email=john.smith@gmail.com, password=pwd123, phoneNumber=7236542882]
+[http-nio-8080-exec-4] 2021-09-29 19:49:18 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-09-29 19:49:18 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=John, lastName=Smith, email=john.smith@gmail.com, password=pwd123, phoneNumber=7236542882]
+[http-nio-8080-exec-4] 2021-09-29 19:49:18 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-09-29 19:49:20 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-09-30 20:13:00 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-09-30 20:13:00 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=sahithhhhh, lastName=D, email=sah.smith@gmail.com, password=pwd123, phoneNumber=7236542882]
+[http-nio-8080-exec-4] 2021-09-30 20:13:00 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-09-30 20:13:00 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=sahithhhhh, lastName=D, email=sah.smith@gmail.com, password=pwd123, phoneNumber=7236542882]
+[http-nio-8080-exec-4] 2021-09-30 20:13:00 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-09-30 20:13:01 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=sdd, lastName=sffsfsf, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=sdd, lastName=sffsfsf, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-7] 2021-09-30 20:20:53 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-3] 2021-09-30 21:57:33 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-3] 2021-09-30 21:57:33 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=Arshatullah, lastName=Mohammed, email=arshuprivate@gmail.com, password=eada, phoneNumber=9985171560]
+[http-nio-8080-exec-3] 2021-09-30 21:57:33 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-3] 2021-09-30 21:57:33 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=Arshatullah, lastName=Mohammed, email=arshuprivate@gmail.com, password=eada, phoneNumber=9985171560]
+[http-nio-8080-exec-3] 2021-09-30 21:57:33 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-09-30 21:57:34 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-09-30 21:57:34 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=Arshatullah, lastName=Mohammed, email=arshuprivate@gmail.com, password=eada, phoneNumber=9985171560]
+[http-nio-8080-exec-4] 2021-09-30 21:57:34 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-09-30 21:57:34 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=Arshatullah, lastName=Mohammed, email=arshuprivate@gmail.com, password=eada, phoneNumber=9985171560]
+[http-nio-8080-exec-4] 2021-09-30 21:57:34 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-3] 2021-09-30 21:57:35 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-09-30 21:57:35 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-8] 2021-10-01 01:23:45 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-1] 2021-10-01 01:24:39 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-10-01 01:31:36 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-7] 2021-10-01 01:32:10 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-10] 2021-10-01 01:33:25 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-3] 2021-10-01 01:38:34 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-6] 2021-10-01 01:41:43 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-9] 2021-10-01 01:55:09 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=arshuuuumowa, lastName=vro, email=coder@gmail.com, password=aea, phoneNumber=2451362457]
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=arshuuuumowa, lastName=vro, email=coder@gmail.com, password=aea, phoneNumber=2451362457]
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-2] 2021-10-01 01:56:01 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-5] 2021-10-01 09:56:48 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-7] 2021-10-01 09:57:08 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-10] 2021-10-01 09:59:51 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-3] 2021-10-01 10:00:55 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-6] 2021-10-01 10:02:04 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-9] 2021-10-01 10:04:23 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-2] 2021-10-01 10:05:48 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-5] 2021-10-01 10:06:11 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-3] 2021-10-01 20:10:37 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-3] 2021-10-01 20:10:38 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 20:10:38 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-3] 2021-10-01 20:10:38 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-3] 2021-10-01 20:10:38 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-3] 2021-10-01 20:10:38 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=arshuuuuu, lastName=coderrrrrr, email=sahith@gmail.com, password=sHITH@45, phoneNumber=9722377723]
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=arshuuuuu, lastName=coderrrrrr, email=sahith@gmail.com, password=sHITH@45, phoneNumber=9722377723]
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-7] 2021-10-01 20:11:13 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:08:27 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=DAMAROWTHU, lastName=SAHITH, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=DAMAROWTHU, lastName=SAHITH, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:08:43 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=DAMAROWTHU, lastName=SAHITH, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=DAMAROWTHU, lastName=SAHITH, email=sahithcherry99@gmail.com, password=, phoneNumber=09618226200]
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:09:01 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-4] 2021-10-01 23:12:35 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:12:35 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=s, lastName=d, email=, password=, phoneNumber=]
+[http-nio-8080-exec-4] 2021-10-01 23:12:35 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:12:35 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=s, lastName=d, email=, password=, phoneNumber=]
+[http-nio-8080-exec-4] 2021-10-01 23:12:35 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-4] 2021-10-01 23:12:37 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=s, lastName=d, email=sahithcherry99@gmail.com, password=sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=s, lastName=d, email=sahithcherry99@gmail.com, password=sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-6] 2021-10-01 23:12:53 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-9] 2021-10-01 23:49:23 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-2] 2021-10-01 23:50:26 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-5] 2021-10-01 23:54:27 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=, lastName=, email=, password=, phoneNumber=]
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-7] 2021-10-01 23:54:37 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=sa, lastName=dc, email=arshuprivate@gmail.com, password=sahith@45, phoneNumber=9985171560]
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=sa, lastName=dc, email=arshuprivate@gmail.com, password=sahith@45, phoneNumber=9985171560]
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-10] 2021-10-01 23:57:01 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-3] 2021-10-02 10:42:14 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-3] 2021-10-02 10:42:14 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=harsha, lastName=karanam, email=karnam@gmail.com, password=hitman123, phoneNumber=3575464646]
+[http-nio-8080-exec-3] 2021-10-02 10:42:14 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-3] 2021-10-02 10:42:14 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=harsha, lastName=karanam, email=karnam@gmail.com, password=hitman123, phoneNumber=3575464646]
+[http-nio-8080-exec-3] 2021-10-02 10:42:14 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-3] 2021-10-02 10:42:15 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-6] 2021-10-02 21:53:22 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-6] 2021-10-02 21:53:22 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=s, lastName=SAHITH, email=sahithcherry99@gmail.com, password=Sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-6] 2021-10-02 21:53:22 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-6] 2021-10-02 21:53:22 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=s, lastName=SAHITH, email=sahithcherry99@gmail.com, password=Sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-6] 2021-10-02 21:53:22 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-6] 2021-10-02 21:53:24 INFO  com.revature.bankapp.controller.CustomerController  - End
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 INFO  com.revature.bankapp.controller.CustomerController  - Start
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 DEBUG com.revature.bankapp.controller.CustomerController  - Customer [ firstName=s, lastName=SAHITH, email=sahithcherry99@gmail.com, password=Sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 INFO  com.revature.bankapp.dao.impl.CustomerDaoImpl  - Start
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 DEBUG com.revature.bankapp.dao.impl.CustomerDaoImpl  - Customer [ firstName=s, lastName=SAHITH, email=sahithcherry99@gmail.com, password=Sahith@45, phoneNumber=09618226200]
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 INFO  com.revature.bankapp.dao.Util  - Start
+[http-nio-8080-exec-9] 2021-10-02 21:54:03 INFO  com.revature.bankapp.controller.CustomerController  - End

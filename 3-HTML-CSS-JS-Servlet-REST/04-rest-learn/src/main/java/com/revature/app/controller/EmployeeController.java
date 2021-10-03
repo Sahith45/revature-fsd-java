@@ -90,9 +90,14 @@ public class EmployeeController {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response create(Employee employee) {
-		System.out.println(employee);
-		return Response.ok().build();
+		try {
+			dao.create(employee);
+			return Response.ok().build();
+		} catch (SQLException e) {
+			return Response.status(500).build();
+		}
 	}
+
 	
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
