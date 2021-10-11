@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="employees")
+@Table(name="employee")
 public class Employee {
 
     @Id
@@ -36,12 +36,12 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name="department_id")
 	private Department department;
-    	
-   @ManyToMany(fetch = FetchType.EAGER)
- @JoinTable(name="employee_skill",
+    
+    @ManyToMany  //(fetch = FetchType.EAGER)
+    @JoinTable(name="employee_skill",
             joinColumns = @JoinColumn(name="employee_id"),
             inverseJoinColumns = @JoinColumn(name="skill_id"))
-	private  List<Skill> skillList;
+	private List<Skill> skillList;
 	
 	public Employee() {}
 

@@ -128,9 +128,9 @@ public class Account {
 		return balance;
 	}
 
-	public void setBalance(long l) {
-		this.balance = l;
-	}
+//	public void setBalance(long l) {
+//		this.balance = l;
+//	}
 
 	public int getCustomerId() {
 		return customerId;

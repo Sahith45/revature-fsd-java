@@ -15,7 +15,7 @@ public class Skill {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "name")
+    @Column(name = "skill")
     private String name;
 
     public Skill() {

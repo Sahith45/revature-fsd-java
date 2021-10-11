@@ -7,20 +7,21 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.revature.bankapp.model.Account;
-import com.revature.bankapp.model.Transaction;
 import com.revature.bankapp.dao.AccountDao;
 import com.revature.bankapp.dao.Util;
+import com.revature.bankapp.exception.AppException;
+import com.revature.bankapp.model.Account;
+import com.revature.bankapp.model.Transaction;
 
 
 public class AccountDaoImpl implements AccountDao {
 	CustomerDaoImpl customer = new CustomerDaoImpl();
 
-	public static int currentAccountId;
+    public static int currentAccountId;
 	public static int transferAccountId;
 
 	@Override
-	public void create(Account account) throws SQLException {
+	public void create(Account account) throws AppException {
 		try (Connection connection = Util.getConnection()) {
 			String sql = "insert into account (accountnumber, balance,customerid) values (?, ?, ?)";
 			PreparedStatement statement = connection.prepareStatement(sql);
@@ -29,7 +30,15 @@ public class AccountDaoImpl implements AccountDao {
 			statement.setInt(3,CustomerDaoImpl.currentCustomerId);
 			// statement.setString(4, String.valueOf('N'));
 			statement.executeUpdate();
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		
+			throw new AppException(e);
 		}
+		
+			
+		
 
 	}
 

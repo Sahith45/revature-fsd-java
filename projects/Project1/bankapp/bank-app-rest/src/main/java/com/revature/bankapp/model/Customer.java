@@ -3,6 +3,8 @@ package com.revature.bankapp.model;
 
 
 public class Customer {
+	private int customerId;
+
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -12,10 +14,10 @@ public class Customer {
 	
 	
 	
-	public Customer(String firstName, String lastName, String email, String password, String phoneNumber) {
+	public Customer( int customerId,String firstName, String lastName, String email, String password, String phoneNumber) {
 		super();
 	
-		
+		this.customerId = customerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;

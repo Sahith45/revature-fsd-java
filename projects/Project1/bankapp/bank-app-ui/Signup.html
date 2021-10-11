@@ -4,19 +4,29 @@
 <head>
     <style>
         .img {
-           
-            background-image: url("images/login.jpg");
-           
+
+            background-image: url("images/bg1.jpg");
+
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
 
         }
 
+        form {
+           
+            width: 500px;
+            margin: auto;
+        }
 
-        
-        #formm{
+        #formm {
             font-size: larger;
-            color:rgba(12, 4, 0, 0.938);
+            color: rgba(228, 229, 245, 0.938);
         }
     </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -80,17 +90,15 @@
         </div>
     </nav>
     <div class="cls">
-        <h1>Old Second Bankcorp...</h1><br><br>
+        <h1 >Old Second Bankcorp...</h1><br>
 
     </div>
 
-    <div class="csi col-sm-6">
-        <h3>Customer Sign Up</h3><br><br>
-        <form id="formm">
+    <!-- <form id="formm">
 
             <div>
                 <label for="fn">FirstName:</label>
-                <input type="text" id="fn" placeholder="Enter Your First Name" name="fn" >
+                <input type="text" id="fn" placeholder="Enter Your First Name" name="fn">
                 <div id="firstNameError" class="validation-error"></div>
             </div><br>
             <div>
@@ -100,11 +108,12 @@
             </div><br>
             <div>
                 <label for="email">Email: </label>
-                
-                <input type="text" id="email" title="Enter valid Email." name="email" placeholder="Enter Your Email" required>
-                    <div id="emailValidation" class="validation-error"></div>
 
-                </div><br>
+                <input type="text" id="email" title="Enter valid Email." name="email" placeholder="Enter Your Email"
+                    required>
+                <div id="emailValidation" class="validation-error"></div>
+
+            </div><br>
             <div>
                 <label for="ps">Password:</label>
                 <input type="password" id="ps" placeholder="Enter Your Password" required name="ps">
@@ -114,37 +123,68 @@
                 <label for="pn">PhoneNo</label>
                 <input type="text" id="pn" placeholder="Enter Your PhoneNo" name="pn">
                 <div id="phonenoValidation" class="validation-error"></div>
-            </div><br>
+            </div><br> -->
+
+
+    <div class="csi col-sm-4" id="sah">
+
+        <form class="form-signin" id="formm">
+            <img class="#" src="#" alt="" width="" height="72">
+            <h1 class="h3 mb-3 font-weight-lighter">Customer Sign in</h1>
+
+
+            <label for="fn">FirstName :</label>
+            <input type="email" id="fn" class="form-control" name="fn" placeholder="First Name" autofocus>
+            <div id="firstNameError" class="validation-error"></div>
+
+            <label for="ln" >LastName :</label>
+            <input type="email" id="ln" class="form-control" name="ln" placeholder="Last Name" autofocus>
+            <div id="lastNameError" class="validation-error"></div>
+
+            <label for="email">Email address :</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Email address">
+            <div id="emailValidation" class="validation-error"></div>
+
+            <label for="ps" >Password :</label>
+            <input type="password" id="ps" class="form-control" name="ps" placeholder="Password">
+            <div id="passwordValidation" class="validation-error"></div>
+
+            <label for="pn" >Phone Number :</label>
+            <input type="email" id="pn" name="pn" class="form-control" placeholder="Phone Number">
+            <div id="phonenoValidation" class="validation-error"></div>
+            <!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button> -->
+            <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p> -->
+        </form><br>
 
 
 
-            <div class="container">
+        <div class="container">
 
-                <button type="button" id="sub" class="btn btn-info btn-lg" data-toggle="modal"
-                    data-target="#myModal">SignUp</button>
-
-
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
+            <button type="button" id="sub" class="btn btn-info btn-lg" data-toggle="modal"
+                data-target="#myModal">SignUp</button>
 
 
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
 
-                            </div>
-                            <div class="modal-body" id="Error">
-                                <p></p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="CustomerLogin.html" id="close"></a>
-                            </div>
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
                         </div>
-
+                        <div class="modal-body" id="Error">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="CustomerLogin.html" id="close"></a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+
+        </div>
         </form>
         <!-- <div class="alert alert-danger" id="error">Signup failed. Contact administrator.</div> -->
 

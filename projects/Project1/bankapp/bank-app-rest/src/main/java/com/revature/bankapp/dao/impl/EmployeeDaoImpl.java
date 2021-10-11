@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.revature.bankapp.model.Account;
 import com.revature.bankapp.model.Transaction;
 import com.revature.bankapp.dao.CustomerDao;
@@ -16,6 +19,8 @@ import com.revature.bankapp.model.Customer;
 import com.revature.bankapp.model.Employee;
 
 public class EmployeeDaoImpl implements EmployeeDao {
+	private static final Logger LOGGER = LoggerFactory.getLogger(CustomerDaoImpl.class);
+	
 	public Employee getEmployeeUserName(String userName) throws SQLException {
 		Employee employee = null;
 

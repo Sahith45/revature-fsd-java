@@ -64,7 +64,28 @@ public class CustomerDaoImpl implements CustomerDao {
 				String Password = resultSet.getString("Password");
 				String phoneNumber = resultSet.getString("PhoneNumber");
 				
-				customer = new Customer(FirstName, LastName ,email,Password,phoneNumber);
+				customer = new Customer(currentCustomerId,FirstName, LastName ,email,Password,phoneNumber);
+			}
+		}
+		return customer;
+		
+	}
+	public Customer getCurrentCustomer() throws SQLException {
+		Customer customer = null;
+		
+		try (Connection connection = Util.getConnection()){
+			String sql = "select * from customer where id = ?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1,  currentCustomerId);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				int id = resultSet.getInt("id");
+				String FirstName = resultSet.getString("First_Name");
+				String LastName = resultSet.getString("Last_Name");
+				String email = resultSet.getString("Email");
+				String Password = resultSet.getString("Password");
+				String phoneNumber = resultSet.getString("PhoneNumber");
+				customer = new Customer( id,FirstName, LastName ,email,Password,phoneNumber);
 			}
 		}
 		return customer;

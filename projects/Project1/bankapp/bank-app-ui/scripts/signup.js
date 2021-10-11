@@ -4,7 +4,6 @@ let lastName = document.getElementById("ln");
 let email = document.getElementById("email");
 let password = document.getElementById("ps");
 let phoneno = document.getElementById("pn");
-
 let form = document.getElementById("formm");
 let valid = true;
 
@@ -19,7 +18,7 @@ signup.addEventListener("click", function () {
         console.log(firstName.value);
 
         let firstNameError = document.getElementById("firstNameError");
-        firstNameError.innerText = "First name is required";
+        firstNameError.innerText = "First name is required ";
         valid = false;
         console.log("first name" + valid);
     }
@@ -52,7 +51,7 @@ signup.addEventListener("click", function () {
 
 });
 signup.addEventListener("click", function () {
-    console.log("sahhhh");
+    console.log("sahhhh");  
     addCustomer();
   });
 
@@ -99,6 +98,7 @@ firstName.addEventListener("keyup", function () {
         let firstNameError = document.getElementById("firstNameError");
         firstNameError.innerText = "First Name cannot exceed 20 characters";
         valid = false;
+       
        
     }
 
@@ -245,6 +245,7 @@ signup.addEventListener("click", function(){
         close.innerText = "close";
 
         err.innerText = "Your Are Successfully Registered";
+       
     }
    
 
