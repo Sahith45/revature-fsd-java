@@ -53,7 +53,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				customerTemp.setFirstName(resultSet.getString("First_Name"));
 				customerTemp.setLastName(resultSet.getString("Last_Name"));
 				customerTemp.setEmail(resultSet.getString("Email"));
+				customerTemp.setCustomerId(resultSet.getInt("id"));
 				customerTemp.setPhoneNumber(resultSet.getString("PhoneNumber"));
+				
 
 				customerList.add(customerTemp);
 
@@ -63,20 +65,16 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	}
 
-	public static List eViewAccount() throws SQLException {
+	public static List eViewAccount(int id) throws SQLException {
 		List<Account> accountList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
-			String sql = "select c.id, c.First_Name,c.Last_name,c.Email,c.Phonenumber,a.customerid, accountnumber, balance from account a\r\n"
-					+ " inner join customer c on customerid = c.id;";
+			String sql = "select * from account where customerid= ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1,id);
 			ResultSet resultSet = statement.executeQuery();
 			while (resultSet.next()) {
 				Account accountTemp = new Account();
 				accountTemp.setCustomerId(resultSet.getInt("customerid"));
-				accountTemp.setId(resultSet.getInt("id"));
-				accountTemp.setFirst_Name(resultSet.getString("First_Name"));
-				accountTemp.setLast_Name(resultSet.getString("Last_Name"));
-				accountTemp.setEmail(resultSet.getString("Email"));
 				accountTemp.setAccountNumber(resultSet.getString("accountnumber"));
 				accountTemp.setBalance(resultSet.getDouble("balance"));
 

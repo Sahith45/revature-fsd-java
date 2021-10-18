@@ -31,10 +31,13 @@ public class TransactionController {
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response deposit(Account depositDetails) {
 		
+		
 		try {
 			Account account = dao.currentAccount(depositDetails.getAccountNumber());
 			double newBalance = account.getBalance();
+			
 			newBalance += depositDetails.getBalance();
+			
 			account.setBalance(newBalance);
 			dao.insert(new Transaction('D', depositDetails.getBalance()));
 			dao.update(account);
@@ -54,11 +57,18 @@ public class TransactionController {
 		try {
 			Account account = dao.currentAccount(withdrawDetails.getAccountNumber());
 			double newBalance = account.getBalance();
-			newBalance -= withdrawDetails.getBalance();
-			account.setBalance(newBalance);
-			dao.insert(new Transaction('W', withdrawDetails.getBalance()));
-			dao.update(account);
-			return Response.status(200).build();
+			if (newBalance < withdrawDetails.getBalance()) {
+				LOGGER.info("insufficient funds");
+				return Response.status(400).build();
+			}
+			else {
+				newBalance -= withdrawDetails.getBalance();
+				account.setBalance(newBalance);
+				dao.insert(new Transaction('W', withdrawDetails.getBalance()));
+				dao.update(account);
+				return Response.status(200).build();
+				}
+		   
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
