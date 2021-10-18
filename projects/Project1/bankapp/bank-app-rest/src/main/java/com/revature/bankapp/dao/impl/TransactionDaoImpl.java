@@ -37,7 +37,7 @@ public class TransactionDaoImpl implements TransactionDao {
 
 	}
 
-	public static List<Transaction> transactionList() throws SQLException {
+	public static List<Transaction> transactionList(int id) throws SQLException {
 		List<Transaction> transactionList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
 			String sql = "select * from transaction where accountId = ?";

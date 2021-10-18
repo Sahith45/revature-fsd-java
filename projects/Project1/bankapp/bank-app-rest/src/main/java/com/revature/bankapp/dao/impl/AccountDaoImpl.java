@@ -54,6 +54,29 @@ public class AccountDaoImpl implements AccountDao {
 				Account account = new Account();
 				account.setAccountNumber(resultSet.getString("accountnumber"));
 				account.setBalance(resultSet.getDouble("balance"));
+				account.setId(resultSet.getInt("id"));
+				accountList.add(account);
+
+			}
+
+			return accountList;
+
+		}
+		
+	}
+	public List<Account> accountList(int id) throws SQLException {
+		List<Account> accountList = new ArrayList<>();
+		try (Connection connection = Util.getConnection()) {
+			String sql = "select * from account where customerid = ?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setInt(1,id);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				Account account = new Account();
+				account.setAccountNumber(resultSet.getString("accountnumber"));
+				account.setBalance(resultSet.getDouble("balance"));
+				account.setId(resultSet.getInt("id"));
 				accountList.add(account);
 
 			}
@@ -65,12 +88,12 @@ public class AccountDaoImpl implements AccountDao {
 	}
 	
 	
-	public Account currentAccount() throws SQLException {
+	public Account currentAccount(String accNum) throws SQLException {
 		Account account = null;
 		try (Connection connection = Util.getConnection()) {
 			String sql = "select * from account where accountnumber = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setString(1,"02245323232");
+			statement.setString(1,accNum);
 			ResultSet resultSet = statement.executeQuery();
 			while (resultSet.next()) {
 				currentAccountId = resultSet.getInt("id");
@@ -82,42 +105,88 @@ public class AccountDaoImpl implements AccountDao {
 		}
 		return account;
 	}
-	public static void updateTransfer(Account account) throws SQLException {
+	public void update(Account account) throws SQLException {
 		try (Connection connection = Util.getConnection()) {
 			String sql = "update account set balance = ? where id = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setDouble(1, account.getBalance());
-			statement.setInt(2, transferAccountId);
+			statement.setInt(2,currentAccountId);
 			statement.executeUpdate();
 		}
+
 	}
-	public static void insertTransfer(Transaction transaction) throws SQLException {
+
+	public void insert(Transaction transaction) throws SQLException {
 		try (Connection connection = Util.getConnection()) {
-			String sql = "insert into transaction (type, amount, accountId) values (?, ?, ?)";
+			String sql = "insert into transaction (type, amount, accountid) values (?, ?, ?)";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, String.valueOf(transaction.getType()));
 			statement.setDouble(2, transaction.getAmount());
-			statement.setInt(3, transferAccountId);
+			statement.setInt(3,currentAccountId);
 			statement.executeUpdate();
 		}
+
 	}
-	public Account transferAccount() throws SQLException {
-		Account account = null;
+
+	public static List<Transaction> transactionList(int id) throws SQLException {
+		List<Transaction> transactionList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
-			String sql = "select * from account where accountnumber = ?";
+			String sql = "select * from transaction where accountId = ?";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setString(1,"924928427468");
+
+			statement.setInt(1,id);
+
 			ResultSet resultSet = statement.executeQuery();
 			while (resultSet.next()) {
-				transferAccountId = resultSet.getInt("id");
-				String accNumber = resultSet.getString("accountnumber");
-				Double initialAmount = resultSet.getDouble("balance");
+				Transaction trans = new Transaction();
+				trans.setType(resultSet.getString("type").charAt(0));
+				trans.setAmount(resultSet.getDouble("amount"));
+				trans.setAccountId(resultSet.getInt("accountId"));
+				transactionList.add(trans);
 
-				account = new Account(accNumber, initialAmount);
 			}
+
+			return transactionList;
+
 		}
-		return account;
+
 	}
+//	public static void updateTransfer(Account account) throws SQLException {
+//		try (Connection connection = Util.getConnection()) {
+//			String sql = "update account set balance = ? where id = ?";
+//			PreparedStatement statement = connection.prepareStatement(sql);
+//			statement.setDouble(1, account.getBalance());
+//			statement.setInt(2, transferAccountId);
+//			statement.executeUpdate();
+//		}
+//	}
+//	public static void insertTransfer(Transaction transaction) throws SQLException {
+//		try (Connection connection = Util.getConnection()) {
+//			String sql = "insert into transaction (type, amount, accountId) values (?, ?, ?)";
+//			PreparedStatement statement = connection.prepareStatement(sql);
+//			statement.setString(1, String.valueOf(transaction.getType()));
+//			statement.setDouble(2, transaction.getAmount());
+//			statement.setInt(3, transferAccountId);
+//			statement.executeUpdate();
+//		}
+//	}
+//	public Account transferAccount() throws SQLException {
+//		Account account = null;
+//		try (Connection connection = Util.getConnection()) {
+//			String sql = "select * from account where accountnumber = ?";
+//			PreparedStatement statement = connection.prepareStatement(sql);
+//			statement.setString(1,"924928427468");
+//			ResultSet resultSet = statement.executeQuery();
+//			while (resultSet.next()) {
+//				transferAccountId = resultSet.getInt("id");
+//				String accNumber = resultSet.getString("accountnumber");
+//				Double initialAmount = resultSet.getDouble("balance");
+//
+//				account = new Account(accNumber, initialAmount);
+//			}
+//		}
+//		return account;
+//	}
 
 
 	

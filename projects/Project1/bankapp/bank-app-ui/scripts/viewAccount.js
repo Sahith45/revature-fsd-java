@@ -1,42 +1,3 @@
-//  let accounts = [
-//     {
-
-//         AccountNumber: "089287647277",
-//         balance: 40000
-
-
-//     },
-//     {
-
-//       AccountNumber: "54677647277",
-//       balance: 60000
-
-
-//     },
-//     {
-
-//       AccountNumber: "0892876467887",
-//       balance: 70000
-
-//     },
-//     {
-
-//       AccountNumber: "0892876472455",
-//       balance: 450000
-
-
-//     },
-//     {
-
-//       AccountNumber: "2842957276472455",
-//       balance: 4500000000
-
-
-//     }
-
-
-
-// ];
 
 (async function () {
   try {
@@ -44,16 +5,17 @@
     let accounts = await response.json();
     var acc = "";
     for (let account of accounts) {
-      acc += ` <div class="col-sm-6">
-    <div class="card card text-dark bg-light mb-3">
+      console.log(account.id);
+      acc += ` <div class="col-sm-6 ">
+    <div class="card card text-dark bg-light mb-3 card border-danger mb-3 ">
       <div class="card-body">
         <h5>Account Number : ${account.accountNumber}</h5>
        
         <div class="badge badge-success">Balance : ${account.balance}</div><br><br>
-        <div class="card-footer">
-          <a href="WithDraw.html" class="btn btn-info">WithDraw</a>
-          <a href="Deposit.html" class="btn btn-info">Deposit</a>
-          <a href="TransactionList.html" class="btn btn-info">TransactionList</a>
+        <div class="card-footer ">
+          <a href="WithDraw.html?id=${account.accountNumber}" class="btn btn-info">WithDraw</a>
+          <a href="Deposit.html?id=${account.accountNumber}" class="btn btn-info">Deposit</a>
+          <a href="TransactionList.html?id=${account.id}"  class="btn btn-info tranBt">TransactionList</a>
         </div>
       </div>
     </div>

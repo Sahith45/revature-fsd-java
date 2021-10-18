@@ -1,10 +1,8 @@
-import { Gender, someFunction, age } from "./gender.js";
+import{Gender} from "./gender.js";
 
-var male = new Gender(1, "Male");
+var male = new Gender(1,"male");
 male.display();
 
-var female = new Gender(2, "Female");
-female.display();
+var Female = new Gender(2,"Female");
+Female.display();
 
-console.log(someFunction());
-console.log(age);

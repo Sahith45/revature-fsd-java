@@ -9,7 +9,9 @@ export interface Movie {
   mpaaRating: MpaaRating,
   rating: number,
   duration: number,
+  
   budget: number,
-  favorite: boolean,
-  bookingsOpen: boolean
+  favorite:boolean,
+  bookingsOpen:boolean
+
 }

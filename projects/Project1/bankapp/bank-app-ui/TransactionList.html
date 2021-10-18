@@ -2,6 +2,12 @@
 <html>
 
 <head>
+    <style>
+        .abc{
+            background-color:rgb(232, 237, 240);
+        }
+       
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -9,7 +15,7 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body>
+<body class="abc">
 
 
     <!-- <a href="Home.html">Home</a>
@@ -82,20 +88,89 @@
        
         <div class="cls">
             <h1>Old Second Bankcorp....</h1><br><br>
-            <h2>Transaction Lists Of Customer</h2>
+            <h2></h2>
     
         </div>
-        <form>
-            <label for="fn">Enter the Account Number:</label>
-            <input type="text" id="fn"  required placeholder="Enter Your Account Number"><br><br>
-            <a href="ViewAccounts.html"><input type="submit" value="View Transaction List"></a>
 
-          
+        <div class="container-fluid ">
+          <h4 style="text-align: center;">Transaction Lists Of Customer</h4>
+            <div class="row "id = "transactions">
+               <!-- <div class="col-sm-6 "> 
+                <div class="card text-white bg-dark mb-3">
+                  <div class="card-body">
+                    <h5> 09234572454522</h5>
+                    <div>D Sahith</div>
+                    <div class="badge badge-danger">30000</div><br><br>
+                    <div class="card-footer">
+                      <a href="WithDraw.html" class="btn btn-primary">WithDraw</a>
+                      <a href="Deposit.html" class="btn btn-primary">Deposit</a>
+                      <a href="TransactionList.html" class="btn btn-primary">TransactionList</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card card text-white bg-dark mb-3">
+                  <div class="card-body">
+                    <h5> 09234572454522</h5>
+                    <div>D Sahith</div>
+                    <div class="badge badge-danger">40000</div><br><br>
+                    <div class="card-footer">
+                      <a href="WithDraw.html" class="btn btn-primary">WithDraw</a>
+                      <a href="Deposit.html" class="btn btn-primary">Deposit</a>
+                      <a href="TransactionList.html" class="btn btn-primary">TransactionList</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card card text-white bg-dark mb-3">
+                  <div class="card-body">
+                    <h5> 0336467557522</h5>
+                    <div>D Sahith</div>
+                    <div class="badge badge-danger">50000</div><br><br>
+                    <div class="card-footer">
+                      <a href="WithDraw.html" class="btn btn-primary">WithDraw</a>
+                      <a href="Deposit.html" class="btn btn-primary">Deposit</a>
+                      <a href="TransactionList.html" class="btn btn-primary">TransactionList</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card card text-white bg-dark mb-3">
+                  <div class="card-body">
+                    <h5> 039572757275279</h5>
+                    <div>D Sahith</div>
+                    <div class="badge badge-danger">900000</div><br><br>
+                    <div class="card-footer">
+                      <a href="WithDraw.html" class="btn btn-primary">WithDraw</a>
+                      <a href="Deposit.html" class="btn btn-primary">Deposit</a>
+                      <a href="TransactionList.html" class="btn btn-primary">TransactionList</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card card text-white bg-dark mb-3">
+                  <div class="card-body">
+                    <h5> 039572757275279</h5>
+                    <div>D Sahith</div>
+                    <div class="badge badge-danger">900000</div><br><br>
+                    <div class="card-footer">
+                      <a href="WithDraw.html" class="btn btn-primary">WithDraw</a>
+                      <a href="Deposit.html" class="btn btn-primary">Deposit</a>
+                      <a href="TransactionList.html" class="btn btn-primary">TransactionList</a>
+                    </div>
+                  </div> 
+                </div>
+              </div>-->
+        
+            </div>
+          </div>
 
-           
-            
-            
-        </form>
+          <button type="button" id="Btn" class="btn btn-outline-dark">Click to view transactionList</button>
+       
        
        
    
@@ -105,7 +180,9 @@
 
 
 
-
+  
+            
+<script src="scripts/transaction.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

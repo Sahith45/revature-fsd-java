@@ -44,18 +44,66 @@
 
 // ];
 
-// (async function () {
-//   try {
-//     let response = await fetch("http://localhost:8080/bank-app-rest/customers/");
-//     let customer = await response.json();
-//     let cust = "";
-//     for (let customer of customers) {
-//       cust += `<div class="col-sm-4 "> 
+(async function () {
+  try {
+    let response = await fetch("http://localhost:8080/bank-app-rest/employees");
+    let customers = await response.json();
+    let cust = "";
+    for (let customer of customers) {
+      console.log(customer.customerId);
+      cust += ` <div class="col-sm-4">
+      <div class="card card text-dark bg-light mb-3 card border-danger mb-3">
+        <div class="card-body">
+        <h5  class="card-title "card-body text-success">${customer.firstName}${customer.lastName}</h5>
+        <h6 class="card-title "> ${customer.email}</h6>
+         <div class="badge badge-"><h5>${customer.phoneNumber}</h5></div><br><br>
+         
+          <div class="card-footer card border-warning mb-3 ">
+          <a href="ecustomerAccounts.html?id=${customer.customerId}" class="btn btn-info">AccountList</a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+    }
+    document.getElementById("detail").innerHTML = cust;
+  } catch (err) {
+
+  }
+})();
+
+
+// <table class="table table-striped table-dark">
+//   <thead>
+//     <tr>
+//       <th scope="col">First Name</th>
+//       <th scope="col">Last Name</th>
+//       <th scope="col">E mail</th>
+//       <th scope="col">Phone Number</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <th scope="row">1</th>
+//       <td> ${customer.firstName}</td>
+//       <td>${customer.lastName}</td>
+//       <td> ${customer.email}</td>
+//       <td>${customer.phoneNumber}</td>
+//     </tr>
+    
+//     <tr>
+//       <th scope="row">3</th>
+//       <td> <a href="ecustomerAccounts.html" class="btn btn-primary">AccountList</a></td>
+//     </tr>
+//   </tbody>
+// </table>
+
+
+// `<div class="col-sm-4 "> 
 //     <div class="card text-white bg-dark mb-3">
 //       <div class="card-body">
 //         <h3> Name:  ${customer.firstName} ${customer.lastName}</h3>
-//         <h5>Email:  ${customer.Email}</h5>
-//         <div class="badge badge-success">Phone Number: ${customer.PhoneNumber}</div><br><br>
+//         <h5>Email:  ${customer.email}</h5>
+//         <div class="badge badge-success">Phone Number: ${customer.phoneNumber}</div><br><br>
 //         <div class="card-footer">
          
 //           <a href="ecustomerAccounts.html" class="btn btn-primary">AccountList</a>
@@ -64,37 +112,3 @@
 //       </div>
 //     </div>
 //   </div>`;
-//     }
-//     document.getElementById("detail").innerHTML = cust;
-//   } catch (err) {
-
-//   }
-// })();
-
-
-
-(async function () {
-  try {
-      let response = await fetch("http://localhost:8080/bank-app-rest/customers");
-      let customer = await response.json();
-      // for (let customer of customers) {
-        cust += `<div class="col-sm-4 "> 
-      <div class="card text-white bg-dark mb-3">
-        <div class="card-body">
-          <h3> Name:  ${customer.firstName} ${customer.lastName}</h3>
-          <h5>Email:  ${customer.email}</h5>
-          <div class="badge badge-success">Phone Number: ${customer.phoneNumber}</div><br><br>
-          <div class="card-footer">
-           
-            <a href="ecustomerAccounts.html" class="btn btn-primary">AccountList</a>
-         
-          </div>
-        </div>
-      </div>
-    </div>`;
-      // }
-      
-  } catch (err) {
-
-      }
-})();

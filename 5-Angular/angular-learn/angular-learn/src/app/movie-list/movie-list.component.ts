@@ -8,25 +8,12 @@ import { Movie } from '../movie/model/movie';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-  movies: Movie[] = movies;
-  searchKey: string = "";
+
+  movies : Movie[] = movies;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  signalFromChild(): void {
-    console.log("Signal from child component received.");
-  }
-
-  findMovies() : void {
-    let matchingMovies = [];
-    for (let movie of movies) {
-      if (movie.title.includes(this.searchKey)) {
-        matchingMovies.push(movie);
-      }
-    }
-    this.movies = matchingMovies;
-  }
 }
