@@ -5,9 +5,9 @@
 
     <style>
         .csi {
-            background-image: url("images/login.jpg");
+            background-image: url("images/withdraw.jpg");
 
-            height: 700px;
+            height: 600px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -17,6 +17,11 @@
         #success{
             color: rgb(41, 197, 93);
             text-align: center;
+        }
+        #failed{
+            color: rgb(240, 53, 53);
+            text-align: center;
+
         }
 
         </style>
@@ -100,20 +105,21 @@
     </nav>
     <div class="csi">
         <div class="cls">
-            <h1>Old Second Bankcorp..</h1><br><br>
+            <h1>Old Second Bankcorp..</h1>
 
         </div>
-        <h1 id="success" class="alert alert success"></h1>
+        <h4 id="success" class="alert alert success"></h4>
+        <h5 id="failed" class="alert alert success"></h5>
 
         <div class="container ">
             
             <div id="error" class="alert alert warning"></div>
-            <div class="row justify-content-center align-items-center ">
-                <div class="card text-dark   mb-3 mb-3 col-12 col-lg-4">
+            <div class="row justify-content-center align-items-center  ">
+                <div class="card text-dark   mb-3 mb-3 col-12 col-lg-4 card border-danger mb-3">
                     <div class="card-header bg-transparent text-center" style="font-weight: bold;">Withdrawal</div>
-                    <div class="card-body  justify-content-center align-items-center">
+                    <div class="card-body  justify-content-center  align-items-center">
                         <h5 class="card-title" id="setAccountNumber" style="text-align: center;">Enter Amount :</h5>
-                        <div class="row justify-content-center align-items-center "><input type="text" name="amount"
+                        <div class="row justify-content-center align-items-center  "><input type="text" name="amount"
                                 id="amount" placeholder="Enter Amount Here"></div>
                         <div id="amountError" class="validation-error"></div>
                     </div>

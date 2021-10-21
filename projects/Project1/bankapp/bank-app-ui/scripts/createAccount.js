@@ -3,6 +3,7 @@ let bal = document.getElementById("ps");
 let form = document.getElementById("frm");
 let create = document.getElementById("sub");
 let valid = true;
+let add = document.getElementById("Added");
 
 
 
@@ -75,8 +76,10 @@ async function addAccount() {
 create.addEventListener("click", function () {
 
     addAccount();
-    alert("Account added successfully");
-    document.location = "Customer.html";
+    clearData();
+    add.innerText = "Account Added Successfully";
+    // alert("Account added successfully");
+    // document.location = "Customer.html";
   
 
 
@@ -110,6 +113,12 @@ create.addEventListener("click", function () {
 
 
 });
+
+function clearData(){
+    account.value = " ";
+    bal.value = " ";
+}
+
 
 
 // create.addEventListener("click", function () {

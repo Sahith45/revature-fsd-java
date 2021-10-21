@@ -54,7 +54,7 @@ async function deposit() {
 
         if (response.status == 200){
             clearData()
-            success.innerText="Success";
+            success.innerText=" Deposit Successful";
         }
 
     }

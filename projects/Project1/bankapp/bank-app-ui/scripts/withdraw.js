@@ -44,6 +44,7 @@ amountEntered.addEventListener("keyup", function () {
 
 async function withdraw() {
     let success = document.getElementById("success");
+    let fail = document.getElementById("failed");
     let withdrawDetails = {
         accountNumber: currentAccNum,
         balance: amountEntered.value
@@ -58,10 +59,16 @@ async function withdraw() {
         let response = await fetch("http://localhost:8080/bank-app-rest/transactions/withdraw", options);
 
         if (response.status == 200){
-            success.innerText="Success";
+            success.innerText="WithDrawal Successful";
             
             clearData();
         }
+        else if (response.status == "400") {
+            clearData();
+           
+            fail.innerText = "Insufficient Funds in your account to perform withdrawal"
+        }
+        
      
 
     }

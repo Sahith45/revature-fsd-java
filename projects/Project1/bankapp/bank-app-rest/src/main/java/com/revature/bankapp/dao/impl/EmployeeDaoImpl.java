@@ -68,7 +68,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	public static List eViewAccount(int id) throws SQLException {
 		List<Account> accountList = new ArrayList<>();
 		try (Connection connection = Util.getConnection()) {
-			String sql = "select * from account where customerid= ?";
+			String sql = "select * from account where customerid= ?";	
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setInt(1,id);
 			ResultSet resultSet = statement.executeQuery();
